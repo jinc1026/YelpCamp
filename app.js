@@ -17,7 +17,16 @@ var commentRoutes = require("./routes/comments"),
 
 
 // mongoose.connect("mongodb://localhost/yelpcamp", {useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.connect("mongodb+srv://jinc1026:wkzkfmxk@yelpcamp-nrkmy.mongodb.net/test?retryWrites=true&w=majority", {
+// mongoose.connect("mongodb+srv://jinc1026:wkzkfmxk@yelpcamp-nrkmy.mongodb.net/test?retryWrites=true&w=majority", {
+// 	useNewUrlParser: true,
+// 	useCreateIndex: true
+// }).then(() => {
+// 	console.log("Connected to DB");
+// }).catch (err => {
+// 	console.log("Error:", err.message);
+// });
+
+mongoose.connect(process.env.DATABASEURL, {
 	useNewUrlParser: true,
 	useCreateIndex: true
 }).then(() => {
