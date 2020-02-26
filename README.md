@@ -13,3 +13,6 @@ Using MEN stack (MongoDB, Express and Node.js), I have created a page to upload 
 - UI Improvements using Bootstrap
 
 Even though all the topics covered in the bootcamp is integrated on this project, the visual improvement is still WIP.
+
+You can visit the page through the following link:
+https://mighty-eyrie-89741.herokuapp.com/
